@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alfred - Personal AI Assistant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:25px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:800;
+    letter-spacing:2px;
+}
+
+.nav-btn{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:silver;
+    color:black;
+    font-weight:700;
+    cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:7rem;
+    font-weight:800;
+    background:linear-gradient(to right,#ffffff,#bdbdbd);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero h2{
+    margin-top:20px;
+    font-size:2rem;
+    color:#bdbdbd;
+}
+
+.hero p{
+    max-width:800px;
+    margin-top:30px;
+    line-height:1.8;
+    color:#b0b0b0;
+    font-size:1.1rem;
+}
+
+.hero button{
+    margin-top:40px;
+    padding:18px 40px;
+    border:none;
+    border-radius:50px;
+    background:silver;
+    color:black;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    transform:translateY(-5px);
+}
+
+/* Sections */
+
+section{
+    padding:120px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:#a0a0a0;
+    margin-bottom:60px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:30px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#b0b0b0;
+    line-height:1.6;
+}
+
+/* Big Statement */
+
+.statement{
+    text-align:center;
+}
+
+.statement h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.statement p{
+    color:#b0b0b0;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* CTA */
+
+.cta{
+    text-align:center;
+}
+
+.cta h1{
+    font-size:4rem;
+    margin-bottom:25px;
+}
+
+.cta button{
+    padding:20px 45px;
+    border:none;
+    border-radius:50px;
+    background:silver;
+    color:black;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#777;
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:4rem;
+}
+
+.hero h2{
+    font-size:1.4rem;
+}
+
+.statement h1,
+.cta h1{
+    font-size:2.5rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">ALFRED</div>
+    <button class="nav-btn">Create Alfred</button>
+</nav>
+
+<section class="hero">
+
+    <h1>ALFRED</h1>
+
+    <h2>The AI That Grows With You</h2>
+
+    <p>
+        Alfred is a personal AI assistant designed to learn from your
+        documents, memories, goals, and conversations. Instead of being
+        another chatbot, Alfred evolves into an assistant built around you.
+    </p>
+
+    <button>Create Your Own Alfred</button>
+
+</section>
+
+<section>
+
+    <h1 class="section-title">Most AI Forgets.</h1>
+    <h1 class="section-title">Alfred Remembers.</h1>
+
+    <p class="section-subtitle">
+        Alfred stores context, remembers information, and helps you
+        retrieve knowledge whenever you need it.
+    </p>
+
+</section>
+
+<section>
+
+    <h1 class="section-title">Everything In One Brain</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🧠 Memory</h3>
+            <p>Store important information and context.</p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Documents</h3>
+            <p>Learn from PDFs, notes, and knowledge bases.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎯 Goals</h3>
+            <p>Track personal goals and progress.</p>
+        </div>
+
+        <div class="card">
+            <h3>💬 Conversations</h3>
+            <p>Maintain context across interactions.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="statement">
+
+    <h1>Built Around You</h1>
+
+    <p>
+        Alfred becomes uniquely yours by learning from the information
+        you choose to provide. The more you use it, the more useful it becomes.
+    </p>
+
+</section>
+
+<section class="cta">
+
+    <h1>Create An AI That Actually Knows You.</h1>
+
+    <button>Create Your Alfred</button>
+
+</section>
+
+<footer>
+
+    Alfred © 2026 <br>
+    Personal AI. Personalized For You.
+
+</footer>
+
+</body>
+</html>
